@@ -13,7 +13,9 @@ function frameIt() {
 }
 
 function pressIt() {
-  $('form')
+  $('form#typing').on('keydwn', function() {
+    if (key.which === )
+  })
 }
 
 $(document).ready(function(){
