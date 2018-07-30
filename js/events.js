@@ -15,13 +15,15 @@ function frameIt() {
 function pressIt() {
   $('form#typing').on('keydwn', function() {
     if (key.which === 71) {
-      alert("You pressed G!");
+      alert('You pressed G!');
     }
   });
 }
 
 function submitIt() {
-  
+  $('form').on('submit', function() {
+    alert('Your form is going to be submitted now.')
+  });
 }
 
 $(document).ready(function(){
